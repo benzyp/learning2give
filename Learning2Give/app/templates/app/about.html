@@ -1,0 +1,35 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+<p>Use this area to provide additional information.</p>
+{% load static %}
+<script src="{% static "app/scripts/jquery-1.10.2.js" %}"></script>
+<script language="javascript">
+   
+        var causes = [
+            { "title": "Mrs. Rogers", "goal": 10000 },
+            { "title": "Mr. Rogers", "goal": 5000 }
+    ];
+    function invoke() {
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:51745/causes/",
+            data: JSON.stringify('{"title": "Mrs. Rogers"}'),
+            contentType: "application/json",
+            dataType: "json",
+            success: function (data) {
+                alert(data);
+            },
+            failure: function (errMsg) {
+                alert(errMsg);
+            }
+        });
+    }
+    invoke();
+</script>
+
+{% endblock %}

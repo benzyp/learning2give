@@ -1,0 +1,1 @@
+C:\Users\Benzy\source\repos\Learning2Give\Learning2Give\env\Scripts>python C:\Users\Benzy\source\repos\Learning2Give\Learning2Give\manage.py install_labels

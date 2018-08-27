@@ -1,0 +1,1 @@
+C:\Users\Benzy\source\repos\Learning2Give\Learning2Give>C:\Users\Benzy\source\repos\Learning2Give\Learning2Give\env\Scripts\python manage.py test
